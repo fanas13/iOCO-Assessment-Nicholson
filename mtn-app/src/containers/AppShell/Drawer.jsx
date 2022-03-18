@@ -4,8 +4,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import IconButton from '@material-ui/core/IconButton';
 import { styled } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import * as React from 'react';
+import Logo from '../../components/Logo/index';
 
 const drawerWidth = 240;
 const AppBar = styled(MuiAppBar, {
@@ -37,11 +37,9 @@ export default function PersistentDrawerTop() {
             edge="start"
           >
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            MTN
-          </Typography>
         </Toolbar>
       </AppBar>
+      <Logo />
     </Box>
   );
 }
