@@ -38,7 +38,7 @@ export default function PersistentDrawerTop() {
           >
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Acme Bank
+            MTN
           </Typography>
         </Toolbar>
       </AppBar>
