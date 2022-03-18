@@ -1,5 +1,6 @@
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import React, { Component } from 'react';
+import Carousel from '../../routes/FeatureRoutes/Carousel/Carousel';
 import Drawer from './Drawer';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
     const { theme } = this.props
     return(<MuiThemeProvider theme={theme}>
       <Drawer />
+      <Carousel />
     </MuiThemeProvider>)
   }
 }
