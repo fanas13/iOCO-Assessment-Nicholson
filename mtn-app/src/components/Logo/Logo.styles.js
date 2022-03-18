@@ -4,8 +4,8 @@ import logo from '../../assets/images/logo.png';
 export const StyledLogo = styled.img.attrs({
     src: `${logo}`
 })`
-    width: 100px;
-    height: 100px;
-    border: 10px solid #ffffff;
+    width: 90px;
+    height: 90px;
+    border: 5px solid #ffffff;
     z-index: 9999
 `;
