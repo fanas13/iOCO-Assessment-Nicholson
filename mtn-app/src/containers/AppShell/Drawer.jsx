@@ -56,7 +56,7 @@ export default function PersistentDrawerTop() {
   return (
     <Box sx={{ display: 'flex' }} >
       <CssBaseline />
-      <AppBar>
+      <AppBar position="relative">
         <Grid item md={12} container spacing={0} justifyContent="center" direction="row">
           <Hidden xsDown>
             <Grid md={1} container alignItems="center" justifyContent="flex-start" item> 
