@@ -15,6 +15,7 @@ const Carousel = () => {
       centeredSlides: true,
       clickable: true, 
       slidesPerView: 'auto',
+      WrapperEl: 'Grid'
     },
     spaceBetween: 30
   }
@@ -44,24 +45,29 @@ const Carousel = () => {
   `;
 
   return (
-    <Grid item md={12} container spacing={0} alignItems="center" justifyContent="center" direction="row">
-      <Grid md={6} container alignItems="center" justifyContent="center" item>
+    <Grid item md={12} container alignItems="center" justifyContent="center" direction="row" item>
+      <Grid md={9} alignItems="center" container justifyContent="center">
       <Swiper ref={ref} {...params}>
-        <div>Slide 1</div>
-        <div>Slide 2</div>
-        <div>Slide 3</div>
-        <div>Slide 4</div>
-        <div>Slide 5</div>
-        <div>Slide 6</div>
-        <div>Slide 7</div>
-        <div>Slide 8</div>
-        <div>Slide 9</div>
-        <div>Slide 10</div>
+        <div>
+          <Grid md={1}>Slide 1</Grid>
+        </div>
+        <div>
+          <Grid md={1}>Slide 2</Grid>
+        </div>
+        <div>
+          <Grid md={1}>Slide 3</Grid>
+        </div>
+        <div>
+          <Grid md={1}>Slide 4</Grid>
+        </div>
+        <div>
+          <Grid md={1}>Slide 5</Grid>
+        </div>
       </Swiper>
       <StyledMenuItem className="arrowButton" onClick={goPrev}>
         <ArrowBackIosOutlined style={{fontSize: '18px'}} color="primary" />
       </StyledMenuItem>
-      <StyledMenuItem className="arrowButton" onClick={goPrev}>
+      <StyledMenuItem className="arrowButton" onClick={goNext}>
         <ArrowForwardIosOutlined style={{fontSize: '18px'}} color="primary" />
       </StyledMenuItem>
       </Grid>

@@ -20,3 +20,8 @@ code {
 .linkContainerItems {
   display: inherit !important;
 }
+
+.swiper-horizontal {
+  height: 500px;
+  width: inherit;
+}
